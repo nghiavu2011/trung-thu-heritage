@@ -1,0 +1,4 @@
+﻿*.backup.html
+.vercel
+.DS_Store
+Thumbs.db

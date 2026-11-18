@@ -539,7 +539,7 @@ if (sContainer && sTrack) {
   // Ngăn chặn kẻ gian tải code về up lên domain khác
   const currentHost = window.location.hostname;
   const isLocal = ['localhost', '127.0.0.1', ''].includes(currentHost);
-  const isVercel = currentHost.endsWith('.vercel.app') || currentHost === 'trung-thu-heritage.vercel.app';
+  const isVercel = currentHost.endsWith('.vercel.app') || currentHost.endsWith('.github.io') || currentHost === 'trung-thu-heritage.vercel.app';
   if (!isLocal && !isVercel) {
     window.location.replace('https://trung-thu-heritage.vercel.app');
   }
